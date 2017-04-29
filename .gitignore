@@ -1,0 +1,6 @@
+node_modules/**
+**~
+
+views/patient-app.js
+views/provider-app.js
+views/index-app.js
