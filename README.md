@@ -15,3 +15,4 @@
 2. npm Install
 3. npm i --save cors, mongoose, mongoose
 4. include in the .env file at root of backend the mlab database values
+--mlabdatabase=mongodb://patientplatypus:oxford@ds123361.mlab.com:23361/athenateam4
