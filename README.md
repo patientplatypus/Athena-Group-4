@@ -1,16 +1,16 @@
-#Welcome TEAM 4 (the best of all possible teams :P)
+# Welcome TEAM 4 (the best of all possible teams :P)
 
-# Idea Documentation
-
-
-# Computer Documentation
-
-# FrontEnd
-## Design
+## Idea Documentation
 
 
-# BackEnd
-# Install
+## Computer Documentation
+
+## FrontEnd
+### Design
+
+
+## BackEnd
+### Install
 1. express -e
 2. npm Install
 3. npm i --save cors, mongoose, mongoose
