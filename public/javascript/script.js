@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$("#submit").onclick() = function() {
+	$("#submit").onclick(function() {
 		//set local storage, manage access
 		populateStorage();
 		window.location.replace("./" + $("#selector").value + ".ejs")
-	};
+	});
 
 
 });
