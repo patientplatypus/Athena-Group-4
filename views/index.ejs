@@ -3,24 +3,25 @@
   <head>
     <title><%= title %></title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" href='/javascript/script.js'></script>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src='/javascript/script.js'></script>
+    <link rel='stylesheet' href='../public/stylesheets/style.css' />
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    Jesse Has Modified this file again, and again.
+    Jesse Has Modified this file again.
     something funny
 
 
     <div class="login-box">
-    	<input type="submit" id="username" value="Username" />
-    	<input type="password" id="password" value="Password">
-		<select>
-	  		<option selected disabled>Choose Account Type</option>
+    	Username: <input type="text" id="username" value="Username" /><br>
+    	Password: <input type="password" id="password" value="Password" /><br>
+		<select id="selector">
+	  		<option selected="selected" disabled>Choose Account Type</option>
 	  		<option value="Patient">Patient</option>
 	  		<option value="Doctor">Doctor</option>
-		</select>
+		</select><br>
+		<input type="submit" id="submit" value="Submit" class="submit-btn"/>
 	</div>
   </body>
 </html>

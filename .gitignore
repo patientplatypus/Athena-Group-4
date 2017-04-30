@@ -1,6 +1,7 @@
 node_modules/**
+npm-debug.log
 **~
 
-views/patient-app.js
-views/provider-app.js
-views/index-app.js
+public/javascript/patient-app.js
+public/javascript/provider-app.js
+public/javascript/index-app.js
