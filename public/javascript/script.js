@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#submit").onclick(function() {
+	$("#submit").on('click',function() {
 		//set local storage, manage access
 		populateStorage();
 		window.location.replace("./" + $("#selector").value + ".ejs")
