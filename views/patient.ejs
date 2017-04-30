@@ -2,10 +2,21 @@
 <html ng-app="patientApp">
   <head>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
-    <script src="/javascript/patient-app.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src ="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/appNav.js"></script>
+    <script src="/javascript/add.js"></script>
+    <script src="/javascript/timeline.js"></script>
+    <script src="/javascript/timebucket.js"></script>
+
   </head>
-  <body ng-view>
+  <body>
+
+    <div class="container">
+      <app-nav></app-nav>
+      <div ng-view></div>
+    </div>
   </body>
 </html>
