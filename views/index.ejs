@@ -23,5 +23,12 @@
 		</select><br>
 		<input type="submit" id="submit" value="Submit" class="submit-btn"/>
 	</div>
+	<script type="text/javascript">
+		document.getElementById("submit").onclick() = function() {
+		//set local storage, manage access
+		populateStorage();
+		window.location.replace("./" + $("#selector").value + ".ejs")
+	};
+	</script>
   </body>
 </html>
