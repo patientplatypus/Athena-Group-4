@@ -1,3 +1,5 @@
+console.log('sanity check');
+
 $(document).ready(function() {
 	$("#submit").click(function() {
 		//set local storage, manage access
