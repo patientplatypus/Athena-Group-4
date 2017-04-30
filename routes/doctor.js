@@ -19,11 +19,10 @@ router.get('/patient/:name', function(req, res, next) {
   });
 });
 
-router.post('/patientreport', function(req, res, next) {
-  console.log('name is: ', req.body.name)
-  Patient.findOne({"name": req.body.name}, function(err, patient) {
+router.post('/report', function(req, res, next) {
     console.log('patient is: ', patient)
-    patient.report.push({
+    patient.push({
+      patientname: req.body.name,
       proceduredate: req.body.date,
       vitals: req.body.vitals,
       symptoms: req.body.symptoms,
@@ -41,7 +40,6 @@ router.post('/patientreport', function(req, res, next) {
 
       res.json(patient);
     });
-  });
 })
 
 module.exports = router;
