@@ -5,3 +5,5 @@ npm-debug.log
 public/javascript/patient-app.js
 public/javascript/provider-app.js
 public/javascript/index-app.js
+
+public/example.css
