@@ -5,7 +5,8 @@ $(document).ready(function() {
 		//set local storage, manage access
 		console.log("clicked");
 		populateStorage();
-		window.location.replace("./" + $("#selector").val() + ".ejs")
+		var selectorlower = $('#selector').val().toLowerCase();
+		window.location.replace("./" + selectorlower + ".ejs")
 	});
 
 
