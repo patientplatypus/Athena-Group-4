@@ -5,8 +5,12 @@ $(document).ready(function() {
 		//set local storage, manage access
 		console.log("clicked");
 		populateStorage();
-		var selectorlower = $('#selector').val().toLowerCase();
-		window.location.replace("./" + selectorlower)
+		var selectorlower = $('#selector').val();
+		if (selectorlower != null) {
+			window.location.replace("./" + selectorlower.toLowerCase());
+		}
+		else
+			alert("Select an account type.");
 	});
 
 
