@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    Jesse Has Modified this file again.
-    something funny
-
+    <div class="header">Patient Platypus<sup class="copyright">&copy;</sup></div>
 
     <div class="login-box">
-    	Username: <input type="text" id="username" value="Username" /><br>
-    	Password: <input type="password" id="password" value="Password" /><br>
-		<select id="selector">
-	  		<option selected="selected" disabled>Choose Account Type</option>
-	  		<option value="Patient">Patient</option>
-	  		<option value="Doctor">Doctor</option>
-		</select><br>
-		<input type="submit" id="submit" value="Submit" class="submit-btn"/>
+	    <div class="text">
+	    	<span class="space">Username: </span><input type="text" id="username" value="Username" class="input"/>
+	    	<span class="space">Password: &nbsp;</span><input type="password" id="password" value="Password" class="input"/>
+			<select id="selector" class="input">
+		  		<option selected="selected" disabled value="null">Choose Account Type</option>
+		  		<option value="Patient">Patient</option>
+		  		<option value="Doctor">Doctor</option>
+			</select>
+			<input type="submit" id="submit" value="Submit" class="submit-btn"/>
+		</div>
+		<div class="text">
+		<p>
+		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+		</p>
+		</div>
 	</div>
   </body>
 </html>
