@@ -5,6 +5,11 @@ module.exports = [{
   output: {
     filename: 'provider-app.js',
     path: path.resolve(__dirname, 'public/javascript')
+  },
+  module: {
+    loaders: [
+      { test: /\.html$/, loaders: ["html-loader"] }
+    ]
   }
 },
 {
@@ -12,6 +17,11 @@ module.exports = [{
   output: {
     filename: 'patient-app.js',
     path: path.resolve(__dirname, 'public/javascript')
+  },
+  module: {
+    loaders: [
+      { test: /\.html$/, loaders: ["html-loader"] }
+    ]
   }
 },
 {
@@ -19,5 +29,11 @@ module.exports = [{
   output: {
     filename: 'index-app.js',
     path: path.resolve(__dirname, 'public/javascript')
+  },
+  module: {
+    loaders: [
+      { test: /\.html$/, loaders: ["html-loader"] }
+    ]
   }
-}];
+}
+];
