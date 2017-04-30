@@ -9,25 +9,19 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    Jesse Has Modified this file again, and again.
+    Jesse Has Modified this file again.
     something funny
 
 
     <div class="login-box">
-    	<input type="submit" id="username" value="Username" />
-    	<input type="password" id="password" value="Password">
-		<select>
-	  		<option selected disabled>Choose Account Type</option>
+    	Username: <input type="text" id="username" value="Username" /><br>
+    	Password: <input type="password" id="password" value="Password" /><br>
+		<select id="selector">
+	  		<option selected="selected" disabled>Choose Account Type</option>
 	  		<option value="Patient">Patient</option>
 	  		<option value="Doctor">Doctor</option>
-		</select>
+		</select><br>
+		<input type="submit" id="submit" value="Submit" class="submit-btn"/>
 	</div>
-	<script type="text/javascript">
-		document.getElementById("submit").onclick() = function() {
-		//set local storage, manage access
-		populateStorage();
-		window.location.replace("./" + $("#selector").value + ".ejs")
-	};
-	</script>
   </body>
 </html>
