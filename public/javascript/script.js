@@ -6,7 +6,7 @@ $(document).ready(function() {
 		console.log("clicked");
 		populateStorage();
 		var selectorlower = $('#selector').val().toLowerCase();
-		window.location.replace("./" + selectorlower + ".ejs")
+		window.location.replace("./" + selectorlower)
 	});
 
 
